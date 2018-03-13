@@ -1,10 +1,11 @@
-# **Pruebas con Animaciones en botones con Android Studio**
+# **Probando Animaciones en botones con Android Studio** 
 
 
-Revisar **PercentRelativeLayout**
+*Revisar acerca de **PercentRelativeLayout** para 
+entender el **main_activity.xml*** :thumbsup:
 
-Ejemplo de botones simulando animacion utilizando 
+*Ejemplo de botones simulando animacion utilizando* 
 
-*cambio de imagen* y *sonido* al momento de 
+**cambio de imagen* y *sonido* al momento de*
 
 presionarlos
