@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Se añaden todos los botones creados
         Button button1 = (Button)findViewById(R.id.button1);
         button1.setOnClickListener(this);
         Button button2 = (Button)findViewById(R.id.button2);
@@ -27,13 +28,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button button5 = (Button)findViewById(R.id.button5);
         button5.setOnClickListener(this);
 
+        // Animacion solo para el boton de salida
+        final Button exit = (Button)findViewById(R.id.exit);
+        final MediaPlayer mpexit = MediaPlayer.create(this, R.raw.closemenu);
+        exit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mpexit.start();
+                Toast.makeText(MainActivity.this,"#"+view.getId(),Toast.LENGTH_LONG).show();
+                exit.setBackgroundResource(R.drawable.btns_e);
+            }
+        });
+
     }
 
+    // Animacion para todos los botones
     @Override
     public void onClick(View view) {
         // TODO Auto-generated method stub
-        MediaPlayer mp = MediaPlayer.create(this, R.raw.menuchoose);
-        mp.start();
+        MediaPlayer mpbutton = MediaPlayer.create(this, R.raw.menuchoose);
+        mpbutton.start();
         Toast.makeText(MainActivity.this,"#"+view.getId(),Toast.LENGTH_LONG).show();
         Button btn = new Button(this);
         btn.setBackgroundResource(R.drawable.btns_b);
