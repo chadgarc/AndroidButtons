@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Menu para juego</string>
+
+    <!-- Buttons -->
+    <string name="button1">Button1 38% W</string>
+    <string name="button2">Button2 38% W</string>
+    <string name="button3">Button3 38% W</string>
+    <string name="button4">Button4 38% W</string>
+    <string name="button5">Button5 38% W</string>
+
+</resources>

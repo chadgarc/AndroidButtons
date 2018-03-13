@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- If you have another layout, change it for android.support.percent.PercentRelativeLayout
+     Add xmlns:percent="http://schemas.android.com/apk/res/android"-->
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:percent="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chris.kokoagame_menu.MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background"
+        percent:layout_heightPercent="100%"
+        percent:layout_widthPercent="100%" />
+
+    <Space
+        android:id="@+id/top_space"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        percent:layout_heightPercent="10%"
+        percent:layout_widthPercent="100%" />
+
+    <Space
+        android:id="@+id/bottom_space"
+        android:layout_alignEnd="@+id/right_space"
+        android:layout_below="@+id/left_space"
+        percent:layout_heightPercent="14%"
+        percent:layout_widthPercent="100%" />
+
+    <Space
+        android:id="@+id/left_space"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button1"
+        percent:layout_heightPercent="76%"
+        percent:layout_widthPercent="8%" />
+
+    <Space
+        android:id="@+id/right_space"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button2"
+        percent:layout_heightPercent="76%"
+        percent:layout_widthPercent="8%" />
+
+    <Space
+        android:id="@+id/center_space"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toStartOf="@+id/button2"
+        percent:layout_heightPercent="76%"
+        percent:layout_widthPercent="8%" />
+
+    <Space
+        android:id="@+id/left_space1"
+        android:layout_below="@+id/button1"
+        android:layout_toStartOf="@+id/center_space"
+        percent:layout_heightPercent="10%"
+        percent:layout_widthPercent="38%" />
+
+    <Space
+        android:id="@+id/left_space2"
+        android:layout_alignStart="@+id/button3"
+        android:layout_below="@+id/button3"
+        percent:layout_heightPercent="10%"
+        percent:layout_widthPercent="38%" />
+
+    <Space
+        android:id="@+id/right_space1"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        percent:layout_heightPercent="10%"
+        percent:layout_widthPercent="38%" />
+
+    <Space
+        android:id="@+id/right_space2"
+        android:layout_alignStart="@+id/button4"
+        android:layout_alignTop="@+id/left_space2"
+        percent:layout_heightPercent="10%"
+        percent:layout_widthPercent="38%" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_below="@+id/top_space"
+        android:layout_toEndOf="@+id/left_space"
+        android:background="@drawable/btns_b"
+        android:text="@string/button1"
+        android:textColor="#fffeff"
+        percent:layout_heightPercent="18%"
+        percent:layout_widthPercent="38%" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_below="@+id/left_space1"
+        android:layout_toStartOf="@+id/center_space"
+        android:background="@drawable/btns_b"
+        android:text="@string/button3"
+        android:textColor="#fffeff"
+        percent:layout_heightPercent="18%"
+        percent:layout_widthPercent="38%" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/center_space"
+        android:layout_toStartOf="@+id/right_space"
+        android:background="@drawable/btns_b"
+        android:text="@string/button2"
+        android:textColor="#fffeff"
+        percent:layout_heightPercent="18%"
+        percent:layout_widthPercent="38%" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_below="@+id/right_space1"
+        android:layout_toEndOf="@+id/center_space"
+        android:background="@drawable/btns_b"
+        android:text="@string/button4"
+        android:textColor="#fffeff"
+        percent:layout_heightPercent="18%"
+        percent:layout_widthPercent="38%" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_alignStart="@+id/left_space2"
+        android:layout_below="@+id/left_space2"
+        android:background="@drawable/btns_b"
+        android:text="@string/button5"
+        android:textColor="#fffeff"
+        percent:layout_heightPercent="18%"
+        percent:layout_widthPercent="38%" />
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,4 @@
+#Tue Mar 13 01:21:57 COT 2018
+base.0=D\:\\Proyectos\\kokoagame_menu\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex
